@@ -1,0 +1,296 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    height: 50px;
+}
+
+nav .menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav .nav-links li {
+    margin: 0;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Detail section */
+.detail {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.detail h1 span {
+    color: #007bff;
+}
+
+.detail p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.detail .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.detail .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Image section */
+.image {
+    margin: 20px 0;
+}
+
+.image .abhi {
+    max-width: 85%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .detail {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .image {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+    }
+
+    nav .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+}
+
+/* Mobile menu toggle */
+.menu-open .nav-links {
+    display: flex;
+}
+
+.about {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.about p span {
+    color: #f40101;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about h2{
+   color: #000000;
+}
+/* General Styles */
+
+/* Ensure proper spacing for responsive design */
+* {
+    box-sizing: border-box;
+}
+
+/* Project Styles */
+
+.project {
+    max-width: 100%; /* Ensure the project doesn't exceed the width of its container */
+    margin: 20px 0;
+}
+
+.project p span {
+    color: #f40101;
+}
+
+.project p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project h2 {
+    color: #000000;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px; 
+}
+
+
+
+.column .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.column:first-child {
+    background-color: lightblue;
+}
+
+.column:last-child {
+    background-color: lightgreen;
+}
+
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 1 1 100%; 
+        padding: 10px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .column {
+        min-width: 100%; 
+    }
+}
+
+@media (max-width: 768px){
+input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: 100px;
+    }
+    
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
